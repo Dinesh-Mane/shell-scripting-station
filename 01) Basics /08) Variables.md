@@ -72,6 +72,9 @@ echo "Your home directory is $HOME"
 ```bash
 export PATH=$PATH:/opt/mytools
 ```
+> `$PATH` ही एक environment variable आहे जी एक colon-separated list of directories ठेवते  
+> जेव्हा तुम्ही shell मध्ये काही command टाकता (उदा. `ls`, `python`, `java`), shell ह्या directories मध्ये जाऊन त्या command चं executable शोधतो  
+> `PATH=$PATH:/opt/mytools` म्हणजे: existing PATH ला append करा `/opt/mytools`
 
 # 3. Positional Parameters (Special Variables)
 These hold values passed to the script via the command line.  

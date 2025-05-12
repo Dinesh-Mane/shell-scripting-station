@@ -1,6 +1,6 @@
-# Script to check if a service is running (e.g., sshd)
-
 #!/bin/bash
+
+# Script to check if a service is running (e.g., sshd)
 
 service="sshd"
 

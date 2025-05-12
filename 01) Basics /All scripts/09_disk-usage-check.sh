@@ -1,7 +1,7 @@
+#!/bin/bash
+
 # Script to display disk usage and warn if it exceeds 80%
 # Use Case: Real-world DevOps/Monitoring scenario
-
-#!/bin/bash
 
 usage=$(df / | grep / | awk '{ print $5 }' | sed 's/%//')  # `df` = disk free & `awk`, `sed` to extract percentage
 

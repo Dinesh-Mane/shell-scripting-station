@@ -1,7 +1,7 @@
+#!/bin/bash
+
 # Script to Show All Details Together
 # Demonstrates how shell scripting connects everything
-
-#!/bin/bash
 
 echo "------ SYSTEM INFORMATION ------"
 echo "User: $USER"

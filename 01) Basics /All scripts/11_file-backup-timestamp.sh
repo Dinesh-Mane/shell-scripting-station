@@ -1,6 +1,6 @@
-# Script to create a backup of a file with timestamp
-
 #!/bin/bash
+
+# Script to create a backup of a file with timestamp
 
 read -p "Enter file to backup: " filename
 

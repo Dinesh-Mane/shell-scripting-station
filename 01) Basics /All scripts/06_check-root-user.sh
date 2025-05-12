@@ -1,7 +1,7 @@
+#!/bin/bash
+
 # script to check if a user is root or not.
 # Use Case: Many admin-level scripts should only run as root.
-
-#!/bin/bash
 
 # Check if current user is root
 if [ "$(whoami)" != "root" ]; then

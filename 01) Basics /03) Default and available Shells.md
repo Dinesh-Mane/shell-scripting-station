@@ -26,6 +26,12 @@ Example output:
 ```bash
 bash
 ```
+| Variable | Meaning                                      | Example                 |
+| -------- | -------------------------------------------- | ----------------------- |
+| `$SHELL` | The **default login shell** set for the user | `/bin/bash`             |
+| `$0`     | The **name of the current shell** or script  | `bash` or `./script.sh` |
+
+
 
 # 2. Check All Available Shells on the System
 ## Method: Read `/etc/shells` file

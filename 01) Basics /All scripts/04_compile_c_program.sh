@@ -1,7 +1,8 @@
+#!/bin/bash
+
 # Example to Explain a Compiler (C program + Shell)
 # Demonstrates difference between compiled & interpreted execution
 
-#!/bin/bash
 
 # Create a simple C program
 cat <<EOF > hello.c   

@@ -5,7 +5,7 @@
 service="sshd"
 
 if systemctl is-active --quiet $service; then
-  echo "✅ $service is running."
+  echo "$service is running."
 else
-  echo "❌ $service is NOT running."
+  echo "$service is NOT running."
 fi

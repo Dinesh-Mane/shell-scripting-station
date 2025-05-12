@@ -1,5 +1,6 @@
-# Script to read a number and check if it’s even or odd
 #!/bin/bash
+
+# Script to read a number and check if it’s even or odd
 
 read -p "Enter a number: " num
 

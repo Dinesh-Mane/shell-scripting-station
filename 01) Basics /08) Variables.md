@@ -241,7 +241,7 @@ echo $x  # (nothing will print)
 **Scenario:** Useful when you want to reset a value during iterations or after cleanup.
 
 
-### Q5: Explain the difference between $@ and $* in shell scripting.
+### Q5: Explain the difference between `$@` and `$*` in shell scripting.
 | Variable | Behavior                                  |
 | -------- | ----------------------------------------- |
 | `$@`     | Treats each argument as a separate string |

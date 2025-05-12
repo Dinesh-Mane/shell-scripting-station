@@ -14,12 +14,12 @@ root
 > That means you are temporarily acting as root.
 
 # 2. `who am i`
-**it means:** Show user ID (UID), group ID (GID), and all groups the user belongs to.   
-**Use case:** Check permissions and group memberships.  
+**it means:** "Who originally logged into this terminal?" – It shows the real login user, even if you've switched user with `sudo` or `su`.    
+**Use case:** Useful to know who started the terminal session, especially in remote logins or after switching users.  
 **Example:**  
 ```bash
-$ id
-uid=1000(tcsuser) gid=1000(tcsuser) groups=1000(tcsuser),27(sudo)
+$ who am i
+tcsuser  pts/0  2025-05-12 10:12 (192.168.1.5)
 ```
 Even if you run:
 ```bash
@@ -33,12 +33,12 @@ tcsuser  pts/0 ...
 - `who am i` = tcsuser (original login user)
 
 # 3. `id`
-**it means:** "Who originally logged into this terminal?" – It shows the real login user, even if you've switched user with `sudo` or `su`.  
-**Use case:** Useful to know who started the terminal session, especially in remote logins or after switching users.  
+**it means:** Show user ID (UID), group ID (GID), and all groups the user belongs to.  
+**Use case:** Check permissions and group memberships.  
 **Example:**  
 ```bash
-$ who am i
-tcsuser  pts/0  2025-05-12 10:12 (192.168.1.5)
+$ id
+uid=1000(tcsuser) gid=1000(tcsuser) groups=1000(tcsuser),27(sudo)
 ```
 This says:
 - You are `tcsuser`
@@ -57,7 +57,7 @@ $ sudo echo $USER
 tcsuser  ←  Still shows original user, not root!
 ```
 > Why not reliable?  
-> Because $USER is not updated when you switch users with sudo or su. It just prints whatever was set at login.
+> Because `$USER` is not updated when you switch users with sudo or su. It just prints whatever was set at login.  
 
 ## Summary: 
 

@@ -98,6 +98,8 @@ echo "End"
 > Each line is executed immediately — no need to compile the full script.
 
 # 7. What is a Compiler?
+> Tasa aplya shell scripting madhe compiler cha kahich kaam nahiye, pn mahit asayla pahije ki he ky ahe  
+
 A compiler is a program that converts your entire code into machine language (binary) before running it.
 > This means it translates the whole program first, and then you can run the translated file.
 

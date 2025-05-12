@@ -56,13 +56,13 @@ echo "Backing up data to $backup_dir"
 These are built-in variables provided by the operating system. They're available across processes and shells.  
 
 Example:
-| Variable | Meaning                                    |
-| -------- | ------------------------------------------ |
-| `$USER`  | Current login user                         |
-| `$HOME`  | User's home directory                      |
-| `$PATH`  | List of directories to search for commands |
-| `$PWD`   | Present working directory                  |
-| `$SHELL` | Current shell                              |
+| **Variable** | **Meaning**                                            | **Example Value**                                              |
+| ------------ | ------------------------------------------------------ | -------------------------------------------------------------- |
+| `$USER`      | Username of the currently logged-in user               | `john`                                                         |
+| `$HOME`      | Home directory of the current user                     | `/home/john`                                                   |
+| `$PATH`      | List of directories where the shell looks for commands | `/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin` |
+| `$PWD`       | Present working directory                              | `/home/john/projects`                                          |
+| `$SHELL`     | Path to the current shell used                         | `/bin/bash` or `/bin/zsh`                                      |
 
 ```bash
 echo "You are logged in as $USER"
